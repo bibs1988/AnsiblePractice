@@ -6,7 +6,7 @@
     apt:
      name: tree
      state: present
-
+  tasks:
   - name: install wget on both
     apt: 
       name: wget
