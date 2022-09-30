@@ -1,0 +1,13 @@
+---
+- hosts: myhosts
+  become: yes
+  tasks:
+  - name: install tree on servers
+    apt:
+     name: tree
+     state: present
+
+  - name: install wget on both
+    apt: 
+      name: wget
+      state: present
