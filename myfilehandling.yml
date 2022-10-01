@@ -3,11 +3,11 @@
   become: yes
   tasks:
    name: create file
-    file:
+   file:
       path: /home/ubuntu/myfile
       state: touch
 
    name: create a directory
-    file: 
+   file: 
      path: /home/ubuntu/myfolder
      state: directory
